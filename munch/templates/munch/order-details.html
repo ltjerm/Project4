@@ -1,0 +1,24 @@
+{% extends 'munch/order.html' %}
+
+{% block content %}
+<div class="submission-order">
+    <div class="order-submitt">
+        
+            <h1>Order Submitted!</h1>
+            <p>You should receive a confirmation email soon.</p>
+            
+        
+    </div>
+
+    <div class="Total">
+        
+            <h3>Order:</h3>
+            {% for item in items.all %}
+                <p>{{ item.name }} <span>{{ item.price }}</span></p>
+            {% endfor %}
+
+            <p class="font-weight-bold pt-4">Total: {{ price }}</p>
+        
+    </div>
+</div>
+{% endblock content %}

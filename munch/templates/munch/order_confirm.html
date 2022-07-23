@@ -1,0 +1,76 @@
+{% extends 'munch/order.html' %}
+
+{% block content %}
+
+<div class="dash-navbar">
+  <h1><i class="fa-solid fa-burger"></i>LunchMunch</h1></a>
+  <nav>
+      <a href="/">Home</a>
+      <a href="/logout">Logout</a>
+      <a href="/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+  </nav> 
+</div>
+  <div class="submission-order">
+
+            <h1>Order Submitted!</h1>
+            <p>You should receive a confirmation email soon.</p>
+            
+        
+
+           <h3>Order Summary:</h3>
+            {% for item in items.all %}
+                <p>{{ item.name }} <span>{{ item.price }}</span></p>
+            {% endfor %}
+
+            <p>Total: {{ price }}</p>
+       
+    
+            <h3>Pay Now or Pay With Cash At Delivery</h3>
+        
+            <div id="paypal-button"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+  paypal.Button.render({
+    // Configure environment
+    env: 'sandbox',
+    client: {
+      sandbox: 'Aa3u9X_qFCzBMPwSIdkFKVQI7t7nMlysz7kRzCzb7iV_UavFGEij45NujoUbSHd9y-LPJskZQACBtWnr',
+      production: 'demo_production_client_id'
+    },
+    // Customize button (optional)
+    locale: 'en_US',
+    style: {
+      size: 'small',
+      color: 'gold',
+      shape: 'pill',
+    },
+
+    // Enable Pay Now checkout flow (optional)
+    commit: true,
+
+    // Set up a payment
+    payment: function(data, actions) {
+      return actions.payment.create({
+        transactions: [{
+          amount: {
+            total: '{{price}}',
+            currency: 'USD'
+          }
+        }]
+      });
+    },
+    // Execute the payment
+    onAuthorize: function(data, actions) {
+      return actions.payment.execute().then(function() {
+        // Show a confirmation message to the buyer
+        window.alert('Thank you for your purchase!');
+      });
+    }
+  }, '#paypal-button');
+
+</script>
+{% endblock content %}

@@ -1,0 +1,153 @@
+body{
+    background-color: white;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+nav { 
+    background: white;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+
+    /* Pay special attention here! */
+    position: sticky;
+    top: 0px; 
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+   
+    
+    border-radius: 2rem;
+    padding: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+    html {
+    scroll-behavior: smooth;
+    }
+}
+
+.footer {
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    background-color: orange;
+}
+
+.order-btn{
+    display: inline-block;
+    top: 50%;
+    margin: 0 10px 0 10%;
+    
+}
+
+.title-color {
+    color: orange;
+}
+
+.btn-order {
+    border: 2px;
+    border-radius: 5rem;
+    color: white;
+    background-color: orange;
+    padding: 15px ;
+    
+
+}
+
+
+
+.delivery-img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    top: -350px;
+}
+
+.signup-wrapper{
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 2rem;
+    text-align: center;
+    width: 30%;
+    left: 37%;
+    padding: 10px 10px 10px 10px;
+    
+
+}
+
+.login-form{
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 2rem;
+    text-align: center;
+    width: 30%;
+    left: 37%;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.btn-reg {
+    border: 2px;
+    border-radius: 5rem;
+    color: white;
+    background-color: orange; 
+    padding: 10px ;
+}
+
+#username {
+    padding: 7px;
+    border-radius: 1rem;
+}
+
+#email {
+    padding: 7px;
+    margin: 0 0 0 30px;
+    border-radius: 1rem;
+}
+
+#password1 {
+    padding: 7px;
+    border-radius: 1rem;
+}
+
+#password2 {
+    padding: 7px;
+    border-radius: 1rem;
+    margin: 0 65px 0 0;
+}
+
+#user-box {
+    padding: 7px;
+    border-radius: 1rem;
+}
+#pass-box {
+    padding: 7px;
+    border-radius: 1rem;
+}
+
+#login-btn {
+    border: 2px;
+    border-radius: 5rem;
+    color: white;
+    background-color: orange; 
+    padding: 10px ;
+}
+
+
+.footer-fixed {
+    padding: 10px 0 0 0;
+
+}
+

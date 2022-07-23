@@ -1,0 +1,28 @@
+{% extends 'munch/base.html' %} 
+{% block content %}
+
+<div class="signup-wrapper">  
+    <form method="post" action="">
+    {% csrf_token %}
+        <label for="">Username</label>
+        <input type="text" name="username" id="username" placeholder="username" Required>
+        <br />
+    
+        
+        <label for="">Email:</label>
+        <input type="email" name="email" id="email" placeholder="email" Required>
+        <br />
+    
+        <label for="">Password:</label>
+        <input type="password" name="password1" id="password1" placeholder="password" Required>
+        <br />
+    
+        <label for="">Confirm Password:</label>
+        <input type="password" name="password2" id="password2" placeholder="password" Required>
+        <br />
+    
+        <button type="submit" name="register" class="btn-reg">Register</button>
+    </form>
+</div> 
+
+{% endblock %}

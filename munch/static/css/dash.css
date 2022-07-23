@@ -1,0 +1,179 @@
+body{
+    background-color: white;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+nav { 
+    background: white;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0px; 
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+   
+    
+    border-radius: 2rem;
+    padding: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+    html {
+    scroll-behavior: smooth;
+    }
+}
+
+.footer {
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    background-color: orange;
+}
+
+.order-btn{
+    display: inline-block;
+    top: 50%;
+    margin: 0 10px 0 10%;
+    
+}
+
+.title-color {
+    color: orange;
+}
+
+.btn-order {
+    border: 2px;
+    border-radius: 5rem;
+    color: white;
+    background-color: orange;
+    padding: 15px ;
+    
+
+}
+
+.delivery-img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    top: -350px;
+}
+
+.submit-order {
+    border: 2px;
+    border-radius: 5rem;
+    color: white;
+    background-color: orange;
+    padding: 15px ;
+}
+
+/* .food-container {
+    display: inline-table;
+    border: 1px solid black;
+    padding: 0 0 2rem 1rem;
+    margin: 0 0 0 300px;
+    justify-content: center;
+    
+} */
+
+.entre-container {
+    display: inline-table;
+    border: 1px solid black;
+    padding: 0 0 2rem 1rem;
+    margin: 0 0 0 2%;
+    justify-content: center;
+}
+
+.side-container {
+    display: inline-table;
+    border: 1px solid black;
+    padding: 0 0 2rem 1rem;
+    margin: 0 0 0 2%;
+    justify-content: center;
+    
+}
+
+.drink-container {
+    display: inline-table;
+    border: 1px solid black;
+    padding: 0 0 2rem 1rem;
+    margin: 0 0 0 2%;
+    justify-content: center;
+}
+
+.submit-form {
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 2rem;
+    text-align: center;
+    width: 30%;
+    left: 37%;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 0 0 0;
+}
+
+.name-form{
+    padding: 7px;
+    border-radius: 1rem;
+}
+
+.email-form {
+    padding: 7px;
+    border-radius: 1rem;
+    margin: 0 40px 0 0;
+}
+
+.street-form {
+    padding: 7px;
+    border-radius: 1rem;
+    margin: 0 50px 0 0;
+}
+
+.city-form {
+    padding: 7px;
+    border-radius: 1rem;
+    margin: 0 0 0 40px;
+}
+
+.state-form {
+    padding: 7px;
+    border-radius: 1rem;
+    margin: 0 0 0 35px;
+}
+
+.zip-form {
+    padding: 7px;
+    border-radius: 1rem;
+    margin: 0 0 0 10px;
+}
+
+.place-order-button {
+    border: 2px;
+    border-radius: 5rem;
+    color: white;
+    background-color: orange; 
+    padding: 10px ;
+    margin: 20px 0 20px 0;
+}
+
+.submission-order {
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    right: 20%;
+    padding: 0 0 20px 0;
+}
