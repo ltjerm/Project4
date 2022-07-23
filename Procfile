@@ -1,0 +1,1 @@
+web: gunicorn lunch_munch.wsgi
