@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b04c44c86eca3e486ef2ab4a9a08c9c2c1531422cfe0123e55023fb1b157effc"
+            "sha256": "4ff56df6605a484f471950686901011fc8b37c27308a9acdd56ee7f166f9b408"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -48,11 +48,18 @@
         },
         "django": {
             "hashes": [
-                "sha256:a67a793ff6827fd373555537dca0da293a63a316fe34cb7f367f898ccca3c3ae",
-                "sha256:ca54ebedfcbc60d191391efbf02ba68fb52165b8bf6ccd6fe71f098cac1fe59e"
+                "sha256:031ccb717782f6af83a0063a1957686e87cb4581ea61b47b3e9addf60687989a",
+                "sha256:032f8a6fc7cf05ccd1214e4a2e21dfcd6a23b9d575c6573cacc8c67828dbe642"
             ],
             "index": "pypi",
-            "version": "==4.0.6"
+            "version": "==4.1"
+        },
+        "fontawesomefree": {
+            "hashes": [
+                "sha256:451e670afe9f8d646db7ef4878df9b9cf9a16186a6aa3d5ce052742524de44b1"
+            ],
+            "index": "pypi",
+            "version": "==6.1.2"
         },
         "psycopg2-binary": {
             "hashes": [
